@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/gear_ratios/META"
+  "_build/install/default/lib/gear_ratios/dune-package"
+  "_build/install/default/lib/gear_ratios/opam"
+]
+bin: [
+  "_build/install/default/bin/gear_ratios"
+]
