@@ -1,9 +1,9 @@
-# dune build
+# dune exec gear_ratios
 # OCAMLPARAM: unset
 # Shared cache: disabled
 # Workspace root: /home/schlexander/Code/AdventOfCode/3/gear_ratios
 # Auto-detected concurrency: 24
-$ /home/schlexander/.opam/default/bin/ocamlc.opt -config > /tmp/dune_c65c60_output
+$ /home/schlexander/.opam/default/bin/ocamlc.opt -config > /tmp/dune_e0b551_output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -102,15 +102,3 @@ $ /home/schlexander/.opam/default/bin/ocamlc.opt -config > /tmp/dune_c65c60_outp
 #      }
 #  ; instrument_with = []
 #  }
-# Promoting "_build/default/gear_ratios.opam" to "gear_ratios.opam"
-$ (cd _build/default && /home/schlexander/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I test/.gear_ratios.eobjs/byte -no-alias-deps -opaque -o test/.gear_ratios.eobjs/byte/dune__exe__Gear_ratios.cmi -c -intf test/gear_ratios.mli)
-$ (cd _build/default && /home/schlexander/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -I lib/.gear_ratios.objs/byte -no-alias-deps -opaque -o lib/.gear_ratios.objs/byte/gear_ratios.cmo -c -impl lib/gear_ratios.ml-gen)
-$ (cd _build/default && /home/schlexander/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/gear_ratios.cma lib/.gear_ratios.objs/byte/gear_ratios.cmo)
-$ (cd _build/default && /home/schlexander/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I bin/.main.eobjs/byte -I lib/.gear_ratios.objs/byte -no-alias-deps -opaque -o bin/.main.eobjs/byte/dune__exe__Main.cmi -c -intf bin/main.mli)
-$ (cd _build/default && /home/schlexander/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -I lib/.gear_ratios.objs/byte -I lib/.gear_ratios.objs/native -intf-suffix .ml-gen -no-alias-deps -opaque -o lib/.gear_ratios.objs/native/gear_ratios.cmx -c -impl lib/gear_ratios.ml-gen)
-$ (cd _build/default && /home/schlexander/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I test/.gear_ratios.eobjs/byte -I test/.gear_ratios.eobjs/native -intf-suffix .ml -no-alias-deps -opaque -o test/.gear_ratios.eobjs/native/dune__exe__Gear_ratios.cmx -c -impl test/gear_ratios.ml)
-$ (cd _build/default && /home/schlexander/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/.gear_ratios.objs/byte -I lib/.gear_ratios.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
-$ (cd _build/default && /home/schlexander/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o test/gear_ratios.exe test/.gear_ratios.eobjs/native/dune__exe__Gear_ratios.cmx)
-$ (cd _build/default && /home/schlexander/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/gear_ratios.cmxa lib/.gear_ratios.objs/native/gear_ratios.cmx)
-$ (cd _build/default && /home/schlexander/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -shared -linkall -I lib -o lib/gear_ratios.cmxs lib/gear_ratios.cmxa)
-$ (cd _build/default && /home/schlexander/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe lib/gear_ratios.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
