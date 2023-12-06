@@ -1,6 +1,9 @@
 const std = @import("std");
 const ArrayList = std.ArrayList;
 
+const game1 = true;
+const game2 = true;
+
 pub fn main() !void {
     var gp = std.heap.GeneralPurposeAllocator(.{ .safety = true }){};
     defer _ = gp.deinit();
