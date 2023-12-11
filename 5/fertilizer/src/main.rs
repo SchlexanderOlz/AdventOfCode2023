@@ -18,6 +18,13 @@ fn main() {
         .split(' ')
         .filter(|x| !maping_pattern.is_match(x) && x.len() > 0)
         .map(|x| x.parse().unwrap())
+        .into_iter()
+        .collect();
+
+    seeds = seeds
+        .chunks(2)
+        .map(|chunk| (chunk[0]..chunk[0] + chunk[1]).map(|acc| acc))
+        .flatten()
         .collect();
 
     for statement in statements {
@@ -62,12 +69,4 @@ impl Lable {
     }
 }
 
-enum MapTypes {
-    SeedSoil,
-    SoilFertilizer,
-    FertilizerWater,
-    WaterLight,
-    LightTemperature,
-    TemperatureHumidity,
-    HumidityLocation,
-}
+
