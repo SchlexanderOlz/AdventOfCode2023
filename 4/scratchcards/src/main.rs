@@ -14,7 +14,6 @@ fn main() {
             let game = split.next().unwrap();
 
             let id: usize = card.replace("Card", "").trim().parse().unwrap();
-            println!("{}", id);
 
             let mut split = game.split('|');
             let winning = split
